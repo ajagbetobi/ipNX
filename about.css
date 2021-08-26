@@ -1,0 +1,234 @@
+.whoweare {
+	width: 80%;
+	text-align: left;
+	margin: 1rem auto 3rem;
+	line-height: 2;
+}
+
+.specialh {
+	position: relative;
+	line-height: 1.2em;
+}
+.specialh::before {
+	position: absolute;
+	left: 0;
+	top: 1.2em;
+	height: 0;
+	width: 50px;
+	content: "";
+	border-top: 0.2rem solid red;
+}
+
+.whoweare > p {
+	font-weight: 300;
+	line-height: 2.3rem;
+}
+.mission,
+.vision {
+	display: flex;
+}
+
+.vision,
+.mission,
+.principles,
+.costumerobsession {
+	width: 80%;
+	margin: 3rem auto;
+}
+.specialp {
+	text-align: left;
+	font-weight: 300;
+	line-height: 2.3rem;
+}
+
+.mr,
+.vl {
+	width: 70%;
+}
+
+.ml,
+.vr {
+	width: 30%;
+}
+
+.principles {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.pb {
+	margin-top: 1.5rem;
+}
+
+.pb > .specialh::before {
+	left: 50%;
+}
+.fas {
+	color: red;
+	font-size: 10rem;
+	margin-left: 4rem;
+}
+
+.newp {
+	line-height: 2.3rem;
+	font-weight: 300;
+}
+
+.co {
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+.costumerobsession {
+	text-align: center;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+.costumerobsession > .specialh {
+	margin: 2rem auto;
+}
+.costumerobsession > .specialh::before {
+	border-top: .2rem solid white;
+	left: 43%;
+	width: 10%;
+}
+
+/* .car-icon {
+	background-color: #333;
+} */
+
+.rotund {
+	margin-left: 46%;
+	width: 5%;
+}
+
+.signup {
+	text-align: center;
+	background-color: #ff0000;
+	color: white;
+	padding: 4rem;
+}
+
+.signup > h2 {
+	margin-bottom: .5rem;
+}
+
+.signform {
+	margin: 2rem;
+}
+
+.suinput,
+.subbtn {
+	height: 3rem;
+	border: none;
+	border-radius: .5rem;
+	width: 27rem;
+}
+
+.subbtn {
+	background-color: #333333;
+	color: white;
+	width: 7rem;
+	margin-left: .5rem;
+}
+
+footer {
+	margin-top: 0rem;
+}
+
+.si1 {
+	margin-left: 2rem;
+}
+
+.si2 {
+	margin-right: -4rem;
+}
+
+@media screen and (max-width: 992px) {
+	.fas {
+		font-size: 6rem;
+		margin-left: 0rem;
+	}
+
+	.pb > .specialh::before {
+		left: 43%;
+	}
+
+	.vision,
+	.mission {
+		width: 90%;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+	.sideicon {
+		width: 6rem;
+		height: 6rem;
+		margin: 2rem;
+		box-sizing: border-box;
+	}
+
+	.si2 {
+		margin-left: -1rem;
+	}
+	.newp,
+	.specialp {
+		line-height: 2rem;
+	}
+	.costumerobsession > .specialh {
+		margin: 2rem auto;
+		width: 100%;
+	}
+	.costumerobsession > .specialh::before {
+		border-top: .2rem solid white;
+		left: 43%;
+		width: 10%;
+	}
+
+	.co {
+		padding: 0;
+	}
+
+	form {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.si1 {
+		margin-left: -.5rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.si1 {
+		margin-left: 1rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	form {
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.suinput {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.subbtn {
+		margin: auto;
+	}
+
+	.signup > .specialh {
+		width: 22rem;
+		margin-left: -3rem;
+	}
+}
