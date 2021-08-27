@@ -457,14 +457,14 @@ footer > p {
 	.intro {
 		position: relative;
 	}
-	/* .vector {
+	.vector {
 		display: none;
-	} */
+	}
 
 	.logoh {
 		margin-left: -3rem;
 	}
-	.v1 {
+	/* .v1 {
 		top: 3rem;
 		left: 13rem;
 	}
@@ -472,7 +472,7 @@ footer > p {
 	.v2 {
 		top: 16.5rem;
 		left: 17rem;
-	}
+	} */
 	.reg {
 		background-color: #fff;
 		z-index: 2;
