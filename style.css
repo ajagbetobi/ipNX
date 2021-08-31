@@ -137,7 +137,7 @@ main {
 .sideicon {
 	margin-right: .5rem;
 }
-.hometargetmarket {
+.targetmarket {
 	width: 90%;
 	margin: 4rem auto 8rem auto;
 	height: 12rem;
@@ -150,7 +150,7 @@ main {
 	padding: 0.4rem;
 }
 
-.htmcard {
+.tmcard {
 	display: flex;
 }
 
@@ -160,7 +160,7 @@ main {
 	margin-right: 1rem;
 }
 
-.htmtext > p {
+.tmtext > p {
 	font-family: "PT Sans", sans-serif;
 }
 
