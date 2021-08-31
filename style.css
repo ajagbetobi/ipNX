@@ -1194,6 +1194,14 @@ footer > p {
 	color: white;
 }
 
+.cp,
+.wlcm,
+.motto,
+.jun,
+.fom {
+	font-family: 'Poppins', sans-serif;
+}
+
 @media screen and (max-width: 992px) {
 	header {
 		margin-bottom: -8rem;
