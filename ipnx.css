@@ -337,8 +337,14 @@ footer > p {
 }
 .fas {
 	color: red;
-	font-size: 10rem;
+	font-size: 5rem;
 	margin-left: 4rem;
+}
+
+.fas.fa-caret-down {
+	color: white;
+	font-size: 1rem;
+	margin-left: 1rem;
 }
 
 .newp {

@@ -154,12 +154,9 @@ main {
 	display: flex;
 }
 
-.fas,
-.far {
-	color: #ff0000;
-	margin-right: 1rem;
+.fas {
+	font-size: 1rem;
 }
-
 .mtext > p {
 	font-family: "PT Sans", sans-serif;
 }
