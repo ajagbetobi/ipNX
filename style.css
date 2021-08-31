@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=PT+Sans&display=swap");
 
-body,
+/* body,
 html {
 	background-color: #fff;
 	max-width: 100%;
 	overflow-x: hidden;
-}
+} */
 
 /* body {
 	margin-bottom: -3rem;
@@ -87,7 +87,8 @@ main {
 	margin-right: 0.5rem;
 }
 
-.jun {
+#jun,
+#jun:hover {
 	color: #fff;
 }
 
@@ -119,7 +120,7 @@ main {
 	border: 0.1rem solid red;
 }
 .rlbtn:nth-child(1):hover {
-	color: white;
+	color: red;
 }
 #fom {
 	color: red;

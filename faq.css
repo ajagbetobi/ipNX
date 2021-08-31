@@ -8,7 +8,11 @@ body {
 	margin: 0;
 	margin-bottom: -2rem;
 }
-
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
 h1,
 h2,
 h3,
@@ -46,6 +50,7 @@ header {
 .search {
 	background-color: #C4C4C496;
 	border-radius: 2rem;
+	border: none;
 	padding: 1rem;
 	box-sizing: border-box;
 	margin-top: -.55rem;
