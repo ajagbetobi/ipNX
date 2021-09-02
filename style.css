@@ -5,6 +5,10 @@ main {
 	display: flex;
 	flex-direction: column;
 }
+
+ul > li {
+	list-style-type: none;
+}
 /**Header**/
 
 .intro {
@@ -89,6 +93,15 @@ main {
 	font-weight: 700;
 	font-size: 2rem;
 	margin-bottom: -6rem;
+}
+
+#fa-user-check {
+	font-size: 1rem;
+	background-color: white;
+	color: rgb(98, 98, 235);
+	border-radius: 50%;
+	padding: .1rem;
+	box-sizing: border-box;
 }
 
 .motto {
@@ -335,16 +348,34 @@ main {
 }
 
 /* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
 	display: none;
 	position: absolute;
+	top: 100%;
 	background-color: #f9f9f9;
 	width: 100%;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 	box-sizing: border-box;
 }
+#logged-in {
+	color: black;
 
+	margin-top: 2rem;
+	background-color: white;
+}
+
+#logged-in > .dropdown-content {
+	background-color: white;
+	padding: 1rem;
+	box-sizing: border-box;
+	width: auto;
+}
+
+#logged-in > .dropdown-content > ul {
+	margin-left: -1rem;
+}
 /* Links inside the dropdown */
 .dropdown-content p {
 	color: black;
@@ -353,6 +384,19 @@ main {
 	display: block;
 	margin: 1rem 20%;
 	font-family: "PT Sans", sans-serif;
+}
+.dropdown-content #heading-dropdown {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	padding: .1rem;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+.profilelinks,
+.profilelinks:hover {
+	color: black;
 }
 
 /* Show the dropdown menu on hover */
