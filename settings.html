@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,13 +30,13 @@
                         <a class="nav-link" href="/careers.html">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link about" href="/about.html">About Us</a>
+                        <a class="nav-link" href="/about.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                    <input type="text" placeholder="Search current job openings" class="nav-link search"></input>
+                        <input type="text" placeholder="Search current job openings" class="nav-link search"></input>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/faq.html">FAQ</a>
@@ -57,112 +57,66 @@
         </nav>
     </header>
     <section class="pagetopic">
-        <h1 class="pageheading">CAREERS</h1>
+        <h1 class="pageheading">Settings</h1>
     </section>
 
-    <section class="eop">
-        <div class="eopl">
-<h1 class="boldh"><span class="redwords" id="changeText"></span> Our <br> Programs</h1>
 
-<p>We relentlessly seek to recruit smart people from
-all academic backgrounds into our graduate programmes
-and entry level positions.</p>
-
-<div class="jobsearch">
-    <label for="role">Role:
-<input id="role" type="text" placeholder="&#xF002;" style="font-family:Arial, FontAwesome" />
-</label>
-<span class="sin">in</span>
-<label for="where">Where:
-<input id="where" type="text" name=""  placeholder="Search">
-</label>
-</div>
-</div>
-        <div class="eopr">
-            <img src="/images/Team akimbo.svg" alt="Team Akimbo" class="teamakimbo">
-            <img src="/images/Rectangle 42.svg" alt="Rect 42" class="rect42">
-        </div>
+    <section class="basicinfo">
+        <h3>Profile</h3>
+        <form class="basicinfoform">
+            <div class="imageupload">
+                <img src="/images/Upload.svg" alt="">
+                <p>Upload image</p>
+            </div>
+            <div class="bimainform">
+                <div class="nameinputs inputs">
+                    <label for="Name"> Name:
+                        <input type="text" name="Name" placeholder="John" id="Name">
+                    </label>
+                    <label for="Surname">Surname:
+                        <input type="text" name="Surname" placeholder="Doe" id="Surname">
+                    </label>
+                </div>
+                <div class="contactinputs inputs">
+                    <label for="E-mail">E-mail:
+                        <input placeholder="abc@xyz.com" type="text" name="E-mail" id="email">
+                    </label>
+                    <label for="Phone Number">Phone Number:
+                        <input placeholder="012-3456-78911" type="text" name="Phone Number" id="phoneno">
+                    </label>
+                </div>
+                <label for="aboutme">
+                    <textarea name="About me" placeholder="I am an author with the passion for writing..." id="aboutme"
+                        cols="30"></textarea>
+                </label>
+            </div>
+        </form>
     </section>
 
-    <section class="unknowns">
-        <div class="unknown ep">
-            <h2>Experienced
-            Professionals</h2>
-            <p><a href="#">Click to apply.</a></p>
-        </div>
-        <div class="unknown grad">
-            <h2>Graduates</h2>
-            <p> <a href="#">Click to apply.</a></p>
-        </div>
-        <div class="unknown stud">
-            <h2>  Students</h2>
-            <p><a href="#">Click to apply.</a></p>
-        </div>
-    </section>
+    <section class="socials">
 
-    <section class="locations">
-        <div class="locl">
-<h1 class="loch">Our Locations</h1>
-<p class="loclt">Large or small, each one of our offices is designed to inspire innovation, big ideas, and community.</p>
-<div class="loclocations">
-    <div class="state">
-        <p class="redwords">Lagos</p>
-        <p class="job">326 jobs</p>
-    </div>
-    <div class="state">
-        <p class="redwords">Abuja</p>
-        <p class="job">236 jobs</p>
-    </div>
-    <div class="state">
-        <p class="redwords">Ibadan</p>
-        <p class="job">54 jobs</p>
-    </div>
-    <div class="state">
-        <p class="redwords">PH</p>
-        <p class="job">235 jobs</p>
-    </div>
-</div>
-        </div>
-        <div class="locr">
-            <img src="/images/Ladywlaptop.svg" class="locrimg" alt="Lady with laptop">
-        </div>
-    </section>
+        <h3 class="socialh">
+            Password
+        </h3>
+        <div class="sociallinks">
 
-    <section class="watipNX">
-        <h2>Working at <span class="redwords" >ip</span>NX </h2>
-        <div class="waimgs">
-           <div class="waimg">
-                <img src="/images/VRBox.svg" alt="watipNXIMG">
-                <h2  class="waimgstext">Learn how we are building a more
-                diverse and inclusive ipNX</h2>
-           </div>     
-           <div class="waimg">
-                <img src="/images/Team Upstairs.svg" alt="watipNXIMG">
-                <h2 class="waimgstext">Building an Enabling Environment</h2>
-           </div> 
+            <label for="twitter">Current Password:
+                <input type="text" name=""  id="twitter">
+            </label>
+            <label for="facebook">New Password:
+                <input type="text"  name="" id="facebook">
+            </label>
+            <label for="linkdin">Confirm Password:
+                <input type="text"  name="" id="linkdin">
+            </label>
+            <label for="website">Security Question:
+                <input type="text"  name="" id="website">
+            </label>
         </div>
+
+        <button class="redbtn rbtn srbtn" type="submit">Update</button>
 
     </section>
-
-<section class="coverletter">
-    <div class="cll">
-<img class="climg" src="/images/climg.svg" alt="Image">
-    </div>
-    <div class="clr">
-        <h2>How to Write a Cover Letter</h2>
-        <div class="clrtext">
-            <p>A cover letter is a single-page letter that you include with your job application.
-            You should always include a cover letter, unless the job advertisement clearly says not to.
-            
-            The purpose of a cover letter
-            When writing a cover letter, you should:
-</p>
-            <p>The purpose of a cover letter
-            When writing a cover letter, you should:</p>
-        </div>
-        <div class=""><a href="" class="redbdrbtn">More</a></div>
-    </div>
-</section>
 
     <footer>
         <a href="#"><img src="/images/ipnx logo 1.svg" alt="" class="logof"></a>
@@ -195,7 +149,7 @@ and entry level positions.</p>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="/app.js"></script>
+    <script src="/app.js"></script>
 </body>
 
 </html>

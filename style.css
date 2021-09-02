@@ -366,6 +366,93 @@ main {
 	margin-left: 0.5rem;
 }
 
+/* Profile Styles */
+
+.basicinfo {
+	text-align: left;
+	width: 90%;
+	margin: 5% auto;
+}
+
+.basicinfo > h3 {
+	margin-left: 5rem;
+}
+
+.basicinfoform {
+	display: flex;
+	margin-left: 5rem;
+	margin-top: 2rem;
+	padding: 2rem;
+	padding-left: 0;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+}
+.imageupload {
+	width: 12rem;
+	height: 12rem;
+	border: 1px solid #999;
+	margin-bottom: auto;
+	margin-top: 1.5rem;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.inputs > label {
+	text-align: left;
+}
+label > input {
+	display: block;
+	width: 120%;
+	height: 3rem;
+	padding: .5rem;
+}
+.inputs > label > input,
+#aboutme,
+.basicinfoform {
+	border: 1px solid #999999;
+}
+
+#aboutme {
+	margin-left: 1rem;
+	width: 109%;
+	padding: .5rem;
+}
+
+.nameinputs,
+.contactinputs {
+	display: flex;
+	width: 100%;
+	margin: 1rem;
+	margin-right: auto;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+
+.socials {
+	width: 83%;
+	margin: 2rem auto;
+	margin-left: 9rem;
+}
+.sociallinks {
+	padding: 1rem;
+	box-sizing: border-box;
+
+	border: 1px solid #999;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.sociallinks > label {
+	text-align: left;
+}
+.sociallinks > label > input {
+	margin: 1rem 2rem;
+	width: initial;
+	margin-left: -10%;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body {
@@ -476,6 +563,11 @@ header {
 
 .redbtn:hover {
 	color: white;
+}
+
+.srbtn {
+	border: none;
+	margin: 2rem auto;
 }
 
 .midlinks {
@@ -964,6 +1056,7 @@ label,
 	width: 100%;
 	margin: 1rem auto;
 	padding: 0rem;
+	padding-top: 1rem;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-around;
@@ -974,8 +1067,30 @@ label,
 .unknown {
 	width: 20rem;
 	height: 20rem;
-	background-color: red;
 	border-radius: 2rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+}
+
+.unknown > h2,
+.unknown > p > a {
+	color: white;
+}
+.ep {
+	background-image: url(/images/ep\ 1.svg);
+}
+
+.grad {
+	background-image: url(/images/grad\ 1.svg);
+}
+
+.stud {
+	background-image: url(/images/stud\ 1.svg);
 }
 
 label {
@@ -996,12 +1111,12 @@ label {
 }
 
 #role {
-	border-radius: 1rem 0 0 1rem;
+	border-radius: 2rem 0 0 2rem;
 	border-right: none;
 }
 
 #where {
-	border-radius: 0 1rem 1rem 0;
+	border-radius: 0 2rem 2rem 0;
 	text-align: right;
 	margin-left: -2rem;
 }
@@ -1072,11 +1187,23 @@ label {
 	justify-content: space-between;
 	width: 90%;
 	align-items: center;
+	position: relative;
+}
+.waimg {
+	height: 100%;
 }
 
 .waimg > img {
 	width: 100%;
 	height: 100%;
+}
+
+.waimgstext {
+	position: absolute;
+	bottom: 2rem;
+	width: 30%;
+	color: white;
+	margin-left: 1.5rem;
 }
 .redwords {
 	color: red;
@@ -1139,6 +1266,119 @@ label {
 	font-size: 1rem;
 	width: 60%;
 }
+
+/* 404 CSS */
+.centercontent {
+	margin: 2rem auto;
+}
+.error {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.lgheading {
+	font-size: 10rem;
+	margin-bottom: -2rem;
+	margin-top: -2rem;
+}
+
+.smallheaing {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+
+/* Login CSS */
+
+.login,
+.signupdiv {
+	width: 40%;
+	border: 1px solid #999;
+	border-top: 2px solid red;
+	text-align: center;
+	height: 70vh;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+.centertopic > h5 {
+	margin-top: -2rem;
+}
+
+.loginform,
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.loginform > label {
+	text-align: left;
+	margin-left: 1rem;
+	margin-bottom: .5rem;
+	margin-top: 1.5rem;
+}
+.loginform > label > p {
+	margin: 0;
+}
+
+#Password,
+#Email,
+label > #Password,
+label > #Email {
+	display: block;
+	width: default;
+}
+
+#Password,
+#Email {
+	width: 90%;
+	height: 2rem;
+	border: 1px solid #999;
+}
+
+#Password {
+	width: 97%;
+}
+
+#Plabel {
+	margin-left: -.02rem;
+}
+
+/* Sign Up CSS */
+.signupdiv {
+	height: 100%;
+}
+
+.signupform {
+	margin-left: -2rem;
+}
+
+.signupform > label,
+.names > label,
+.pword > label {
+	text-align: left;
+	margin-top: 1rem;
+}
+
+.signupform > label > input,
+.names > label > input,
+.pword > label > input {
+	width: 100%;
+	border: 1px solid #999;
+}
+.names,
+.pword {
+	display: flex;
+}
+
+.confirmpasswrdlabel {
+	white-space: nowrap;
+}
+
 /*Footer*/
 
 footer {
@@ -1667,6 +1907,104 @@ footer > p {
 		font-size: 1.65rem;
 		white-space: nowrap;
 	}
+
+	.waimgstext {
+		font-size: 1rem;
+	}
+
+	/* Profile CSS */
+	.basicinfo {
+		margin-left: -15%;
+	}
+	.basicinfoform {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	/* .bimainform {
+		margin-left: -16%;
+	} */
+
+	.nameinputs,
+	.contactinputs {
+		width: 100%;
+		white-space: nowrap;
+	}
+	.nameinputs,
+	.contactinputs,
+	#aboutme {
+		margin-left: -1rem;
+	}
+
+	.socials {
+		margin: 0;
+		margin-left: 1rem;
+		width: 90%;
+	}
+
+	label > input {
+		width: 100%;
+		height: 2rem;
+	}
+
+	#aboutme {
+		width: 100%;
+	}
+
+	/* Login CSS */
+
+	.login,
+	.signupdiv {
+		width: 60%;
+	}
+
+	#Password {
+		width: 90%;
+	}
+
+	#Plabel {
+		margin-left: 1rem;
+	}
+
+	#srbtn {
+		width: 5rem;
+	}
+
+	/* Sign Up CSS */
+	.signupdiv {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.signupform {
+		width: 100%;
+		margin-left: -2rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.signupform > label,
+	.names > label,
+	.pword > label {
+		text-align: left;
+		margin-top: 1rem;
+	}
+
+	.signupform > label > input,
+	.names > label > input,
+	.pword > label > input {
+		width: 100%;
+	}
+	.names,
+	.pword {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.confirmpasswrdlabel {
+		white-space: nowrap;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -1678,6 +2016,17 @@ footer > p {
 	.intror {
 		margin-right: 7rem;
 		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 455px) {
+	.basicinfoform {
+		margin-left: 10%;
+	}
+	.sociallinks {
+		align-items: center;
+		justify-content: center;
+		padding-left: 20%;
 	}
 }
 
@@ -1767,7 +2116,16 @@ footer > p {
 		margin-left: -3rem;
 	}
 }
+
+@media screen and (max-width: 989px) {
+	.basicinfo {
+		margin-left: -5%;
+	}
+}
 @media screen and (max-width: 520px) {
+	.waimgstext {
+		font-size: .55rem;
+	}
 	.loclocations {
 		margin-left: .4rem;
 	}
