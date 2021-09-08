@@ -9,6 +9,11 @@ main {
 ul > li {
 	list-style-type: none;
 }
+
+.whitetext,
+.whitetext:hover {
+	color: white;
+}
 /**Header**/
 
 .intro {
@@ -16,10 +21,6 @@ ul > li {
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-}
-
-#optionlist {
-	margin-left: -2rem;
 }
 
 /*Intro*/
@@ -2284,4 +2285,8 @@ footer > p {
 	.applynowbtn {
 		width: 30%;
 	}
+}
+
+#logged-in > .dropdown-content > ul {
+	margin-left: -2rem;
 }
