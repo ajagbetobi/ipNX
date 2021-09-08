@@ -1581,9 +1581,6 @@ footer > p {
 		display: none;
 	}
 
-	.pagetopic {
-		margin-top: -2.5rem;
-	}
 	.spf {
 		display: none;
 	}
@@ -1606,7 +1603,7 @@ footer > p {
 	}
 
 	.pagetopic {
-		margin-top: 5.5rem;
+		margin-top: -4.5rem;
 	}
 
 	/* About CSS */
@@ -1659,12 +1656,14 @@ footer > p {
 		justify-content: space-around;
 		align-items: center;
 	}
-
-	/* Contact CSS */
-
+	.targetmarket1,
 	.targetmarket {
 		flex-direction: column;
 		height: 100%;
+	}
+	/* Contact CSS */
+
+	.targetmarket {
 		padding: 1.5rem;
 		box-sizing: border-box;
 	}
