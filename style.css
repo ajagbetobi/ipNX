@@ -18,6 +18,10 @@ ul > li {
 	width: 100%;
 }
 
+#optionlist {
+	margin-left: -2rem;
+}
+
 /*Intro*/
 
 .intro {
