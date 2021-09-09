@@ -1537,18 +1537,92 @@ label > #Email {
 
 #fa-angle-right,
 #fa-search,
-#fa-angle-double-right {
+#fa-angle-double-right,
+#filtercaretdown,
+#fa-link,
+#fa-bookmark,
+#fa-home,
+#fa-map-marker-alt {
 	color: black;
 	font-size: 1rem;
+}
+#fa-search,
+#fa-angle-double-right {
 	margin-left: .3rem;
 }
 
-.mainjoblist {
+.jobdetailsandlink {
+	border-bottom: 1px solid #dadce0;
+	margin-bottom: .3rem;
+}
+.mainjoblist,
+.filteredlist,
+.share,
+.save,
+.field,
+.location {
 	display: flex;
 }
 
-/*Footer*/
+.filtertext {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: .7rem;
+	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.11));
+	border: 1px solid #c9cbce;
+	height: 2.5rem;
+	padding-left: 1rem;
+}
 
+.filteredlist {
+	flex-direction: column;
+	margin-left: 1rem;
+}
+
+.filterquestion,
+.filteroption,
+.jobshareandname,
+.shareandsave {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fieldandlocation {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.joblocation {
+	margin-left: -4rem;
+}
+
+.share,
+.field {
+	margin-right: 1rem;
+}
+.bluetext {
+	color: #1967d2;
+}
+
+.mainjoblist {
+	width: 90%;
+	margin: 1rem auto;
+	justify-content: space-evenly;
+	border-top: 1px solid #c9cbce;
+	border-bottom: 1px solid #c9cbce;
+	padding: 1rem 0;
+}
+
+.filtereditem {
+	border: 1px solid #c9cbce;
+	padding: 1rem;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+}
+#expand {
+	margin-left: 45%;
+}
+/*Footer*/
 footer {
 	text-align: center;
 	background-color: #333;
@@ -2205,8 +2279,20 @@ footer > p {
 		height: 50%;
 	}
 
-	.mainjoblist {
+	.mainjoblist,
+	.jobshareandname {
 		flex-direction: column;
+	}
+
+	.shareandsave {
+		justify-content: flex-start;
+	}
+	.joblocation {
+		margin-left: 0rem;
+	}
+
+	.filteredlist {
+		margin-left: 0;
 	}
 }
 
