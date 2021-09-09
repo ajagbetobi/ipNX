@@ -183,7 +183,8 @@ ul > li {
 	margin-left: 10rem;
 }
 
-.spheading {
+.spheading,
+.splink {
 	position: relative;
 	line-height: 1.2em;
 }
@@ -197,6 +198,16 @@ ul > li {
 	border-top: 0.2rem solid red;
 }
 
+.splink:before {
+	position: absolute;
+	left: 0;
+	top: 1.2em;
+	height: 0;
+	width: 100%;
+	content: "";
+	margin-top: .2rem;
+	border-top: .5rem solid red;
+}
 .aboutr {
 	margin-left: 5rem;
 	display: flex;
@@ -1336,6 +1347,47 @@ label {
 	color: red;
 }
 
+.workinfo {
+	width: 90%;
+	margin: 1.5rem auto;
+}
+
+.workinfo > p {
+	margin: 2rem 1rem;
+}
+
+.openpositions {
+	text-align: center;
+	overflow-x: auto;
+	background-color: #e5e5e5;
+	flex-direction: column;
+	display: flex;
+}
+
+.posheading {
+	text-decoration: underline red solid .7rem;
+}
+
+.jobtable {
+	margin: 1rem auto;
+	background-color: white;
+}
+
+th {
+	font-size: 1.5rem;
+	color: white;
+	background-color: #4d4d4d;
+}
+td,
+th {
+	text-align: left;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+tbody > tr {
+	border-bottom: 1px solid #4d4d4d;
+}
 /* Blog CSS */
 
 .posts {
@@ -1365,7 +1417,8 @@ label {
 .centercontent {
 	margin: 2rem auto;
 }
-.error {
+.error,
+.thanks {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -1473,6 +1526,27 @@ label > #Email {
 	white-space: nowrap;
 }
 
+/* All Jobs CSS */
+
+.searchbar {
+	border: 1px solid #c9cbce;
+	padding: 1rem;
+	box-sizing: border-box;
+	margin: 1rem 0;
+}
+
+#fa-angle-right,
+#fa-search,
+#fa-angle-double-right {
+	color: black;
+	font-size: 1rem;
+	margin-left: .3rem;
+}
+
+.mainjoblist {
+	display: flex;
+}
+
 /*Footer*/
 
 footer {
@@ -1537,6 +1611,11 @@ footer > p {
 	font-family: 'Poppins', sans-serif;
 }
 
+/* TYFA */
+.thankstext {
+	text-align: left;
+	width: 50%;
+}
 @media screen and (max-width: 992px) {
 	header {
 		margin-bottom: -8rem;
@@ -2119,6 +2198,15 @@ footer > p {
 		margin-bottom: 1rem;
 		border: none;
 		/* width: 10vw; */
+	}
+
+	.tyfaimg {
+		width: 50%;
+		height: 50%;
+	}
+
+	.mainjoblist {
+		flex-direction: column;
 	}
 }
 
