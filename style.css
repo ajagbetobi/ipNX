@@ -1690,6 +1690,28 @@ footer > p {
 	text-align: left;
 	width: 50%;
 }
+
+/* Job Post CSS */
+
+.jobpost {
+	/* text-align: left; */
+	width: 90%;
+	margin: 1rem auto;
+}
+
+.jobpostheading {
+	margin-top: 3rem;
+	margin-bottom: .5rem;
+}
+.jobapplybtn,
+.jobapplybtn:hover {
+	color: white;
+	background-color: red;
+	text-decoration: none;
+	margin: 40%;
+	padding: .7rem;
+	box-sizing: border-box;
+}
 @media screen and (max-width: 992px) {
 	header {
 		margin-bottom: -8rem;
@@ -2293,6 +2315,11 @@ footer > p {
 
 	.filteredlist {
 		margin-left: 0;
+	}
+
+	.jobapplybtn,
+	.jobapplybtn:hover {
+		margin: 30%;
 	}
 }
 
