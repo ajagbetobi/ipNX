@@ -527,7 +527,9 @@ label > input {
 }
 
 .nameinputs,
-.contactinputs {
+.contactinputs,
+.stateandlga,
+.birthandnation {
 	display: flex;
 	width: 100%;
 	margin: 1rem;
@@ -536,6 +538,19 @@ label > input {
 	justify-content: space-between;
 }
 
+input[type='file'] {
+	color: rgba(0, 0, 0, 0);
+}
+
+#addressapp {
+	text-align: left;
+	margin-left: 4rem;
+}
+.addressinput {
+	width: 112%;
+	padding: .5rem;
+	border: 1px solid #999;
+}
 .socials {
 	width: 83%;
 	margin: 2rem auto;
@@ -1712,6 +1727,82 @@ footer > p {
 	padding: .7rem;
 	box-sizing: border-box;
 }
+
+/* Application Page CSS */
+
+.additionaldocuments {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#additionalfile {
+	width: 50%;
+}
+.CVandCL,
+.certificates,
+.NYSCandIPNX {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+#Resume,
+#Coverletter,
+#Birthcert,
+#Olevelcert {
+	width: 100%;
+	/* margin-left: 1rem; */
+}
+.hwdyhabtus {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+#dywaipNX,
+#dnysc,
+#hdyhabtus {
+	border: 1px solid #999;
+	height: 2.5rem;
+	text-align: center;
+}
+
+#DYWAIPNX,
+#DNYSC {
+	width: 50%;
+}
+
+#dywaipNX,
+#dnysc {
+	display: block;
+	width: 100%;
+}
+#hdyhabtus {
+	width: 10rem;
+}
+
+#firstdegreelabel {
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+#firstdegreeinput {
+	width: 100%;
+	border: 1px solid #999;
+	/* margin-left: 1rem; */
+	box-sizing: border-box;
+}
+
+.applicationbtn {
+	background-color: #ff0000;
+	padding: 1rem;
+	color: #fff;
+	margin-left: 45%;
+}
 @media screen and (max-width: 992px) {
 	header {
 		margin-bottom: -8rem;
@@ -2194,14 +2285,28 @@ footer > p {
 	} */
 
 	.nameinputs,
-	.contactinputs {
+	.contactinputs,
+	.stateandlga,
+	.birthandnation {
 		width: 100%;
 		white-space: nowrap;
+		justify-content: space-around;
 	}
 	.nameinputs,
 	.contactinputs,
+	.stateandlga,
+	.birthandnation,
 	#aboutme {
 		margin-left: -1rem;
+	}
+
+	#addressapp {
+		margin-left: 2rem;
+	}
+
+	.addressinput {
+		width: 97%;
+		box-sizing: border-box;
 	}
 
 	.socials {
@@ -2320,6 +2425,17 @@ footer > p {
 	.jobapplybtn,
 	.jobapplybtn:hover {
 		margin: 30%;
+	}
+
+	/* Application Page */
+
+	#Resume,
+	#Coverletter,
+	#Birthcert,
+	#Olevelcert,
+	#firstdegreeinput {
+		height: 2.5rem;
+		padding: .2rem;
 	}
 }
 
