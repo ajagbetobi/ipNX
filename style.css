@@ -460,6 +460,7 @@ ul > li {
 	align-items: center;
 	color: white;
 	padding-top: 1rem;
+	margin-bottom: 3.5rem;
 }
 
 .applynowbtn {
@@ -470,6 +471,11 @@ ul > li {
 	margin-bottom: 1rem;
 	border: none;
 	width: 10vw;
+}
+
+.applynowbtn > a,
+.applynowbtn > a:hover {
+	color: #8c2727;
 }
 /* Profile Styles */
 
