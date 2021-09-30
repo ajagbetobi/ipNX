@@ -430,6 +430,7 @@ ul > li {
 .questionbox {
 	width: 90%;
 	display: flex;
+	text-align: center;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -441,8 +442,9 @@ ul > li {
 	padding: 1rem;
 	box-sizing: border-box;
 }
-.darksubmitbtn {
-	background-color: #333;
+.newredsubmitbtn,
+.newredsubmitbtn:hover {
+	background-color: red;
 	border: none;
 	outline: none;
 	padding: .7rem;
@@ -1414,12 +1416,14 @@ tbody > tr {
 .posts {
 	width: 80%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	column-gap: 2rem;
 	box-sizing: border-box;
 	margin: 1rem auto;
 }
 
 .post {
+	position: relative;
 	margin-top: 1.5rem;
 	color: black;
 	cursor: pointer;
@@ -1429,9 +1433,37 @@ tbody > tr {
 	height: 10rem;
 }
 
-.title {
+.overlay {
+	position: absolute;
+	transition: all 0.3s ease;
+	opacity: 0;
+	background-color: black;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.post:hover .overlay {
+	opacity: .9;
+}
+
+.overlayFade {
+	width: 10rem;
+	height: 10rem;
+	top: 0;
+	left: 0;
+	background-color: black;
+}
+
+.title,
+.title:hover {
 	font-size: 1rem;
 	width: 60%;
+	color: white;
+}
+
+.date,
+.date:hover {
+	color: red;
 }
 
 /* 404 CSS */
@@ -1463,7 +1495,6 @@ tbody > tr {
 .login,
 .signupdiv {
 	width: 40%;
-	border: 1px solid #999;
 	border-top: 2px solid red;
 	text-align: center;
 	height: 70vh;
@@ -1485,7 +1516,7 @@ tbody > tr {
 
 .loginform > label {
 	text-align: left;
-	margin-left: 1rem;
+
 	margin-bottom: .5rem;
 	margin-top: 1.5rem;
 }
@@ -1503,17 +1534,27 @@ label > #Email {
 
 #Password,
 #Email {
-	width: 90%;
-	height: 2rem;
+	width: 150%;
+	box-sizing: border-box;
+	height: 3rem;
 	border: 1px solid #999;
 }
 
-#Password {
-	width: 97%;
+#srbtn {
+	margin-left: 6rem;
 }
 
-#Plabel {
-	margin-left: -.02rem;
+#Password,
+#Email {
+	width: 150%;
+	box-sizing: border-box;
+	height: 3rem;
+	border: 1px solid #999;
+}
+
+#Plabel,
+#Emaillabel {
+	margin-left: -3rem;
 }
 
 /* Sign Up CSS */
@@ -1724,12 +1765,20 @@ footer > p {
 	margin-top: 3rem;
 	margin-bottom: .5rem;
 }
+
+.buttonsection {
+	width: 90%;
+	margin: 1rem auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .jobapplybtn,
 .jobapplybtn:hover {
 	color: white;
 	background-color: red;
 	text-decoration: none;
-	margin: 40%;
 	padding: .7rem;
 	box-sizing: border-box;
 }
@@ -2073,7 +2122,7 @@ footer > p {
 	/* Blog CSS */
 	.posts {
 		box-sizing: border-box;
-		margin-left: 20%;
+		margin-left: 10%;
 	}
 	.post {
 		margin-left: 20%;
@@ -2083,13 +2132,18 @@ footer > p {
 		height: 6rem;
 	}
 
-	.title {
-		font-size: .6rem;
-		width: 50%;
+	.overlayFade {
+		width: 6rem;
+		height: 6rem;
 	}
-
-	.date {
-		font-size: 50%;
+	.overlay {
+		padding: .4rem;
+	}
+	.title,
+	.title:hover,
+	.date,
+	.date:hover {
+		font-size: .5rem;
 	}
 
 	header {
@@ -2337,16 +2391,18 @@ footer > p {
 		width: 60%;
 	}
 
-	#Password {
+	/* #Password {
 		width: 90%;
-	}
+	} */
 
 	#Plabel {
-		margin-left: 1rem;
+		width: 130%;
+		margin-left: -3rem;
 	}
 
 	#srbtn {
 		width: 5rem;
+		margin-left: 7rem;
 	}
 
 	/* Sign Up CSS */
@@ -2426,11 +2482,6 @@ footer > p {
 
 	.filteredlist {
 		margin-left: 0;
-	}
-
-	.jobapplybtn,
-	.jobapplybtn:hover {
-		margin: 30%;
 	}
 
 	/* Application Page */
